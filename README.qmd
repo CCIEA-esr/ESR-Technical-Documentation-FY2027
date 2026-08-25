@@ -11,9 +11,9 @@ format: gfm
 
 **Where to find the Technical Documentation**
 
-* **Version:** FY 2025 (reporting on data from 2024)
+* **Version:** FY 2027 (reporting on data from 2026)
 * **Technical Documentation Web page:** <https://cciea-esr.github.io/ESR-Technical-Documentation-FY2025/>
-* **Download pdf:** <https://github.com/CCIEA-esr/ESR-Technical-Documentation-FY2025/blob/main/docs/CCIEA-ESR-Technical-Documentation.pdfZ
+* **Download pdf:** <https://github.com/CCIEA-esr/ESR-Technical-Documentation-FY2027/blob/main/docs/CCIEA-ESR-Technical-Documentation.pdfZ
 
 <hr>
 

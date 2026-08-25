@@ -21,7 +21,7 @@ book:
   date: last-modified
   cover-image: "figures/BigSur2 1412030498-2641.jpg"
   favicon: "figures/favicon.ico"
-  repo-url: https://github.com/CCIEA-esr/ESR-Technical-Documentation-FY2026/
+  repo-url: https://github.com/CCIEA-esr/ESR-Technical-Documentation-FY2027/
   downloads: [pdf]
   navbar:
     background: "#276189"
