@@ -2,17 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>45&nbsp; Fishery Revenue Concentration – CCIEA ESR Technical Documentation</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -24,7 +30,6 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -59,10 +64,10 @@ div.csl-indent {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d0b19794c1a4aabc601561f55f1a202f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6d760a16b2f050b9af31d1b509a0109a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -102,7 +107,8 @@ div.csl-indent {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="https://www.integratedecosystemassessment.noaa.gov/regions/california-current" class="navbar-brand navbar-brand-logo">
-    <img src="./figures/logo-5.png" alt="California Current Integrated Ecosystem Assessment Website" class="navbar-logo">
+    <img src="./figures/logo-5.png" alt="California Current Integrated Ecosystem Assessment Website" class="navbar-logo light-content">
+    <img src="./figures/logo-5.png" alt="California Current Integrated Ecosystem Assessment Website" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="https://www.integratedecosystemassessment.noaa.gov/regions/california-current">
     <span class="navbar-title">CCIEA ESR Technical Documentation</span>
@@ -552,9 +558,9 @@ div.csl-indent {
 </div>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-leonard2011description" class="csl-entry" role="listitem">
-Leonard, Jerry Lamar, and Philip Scott Watson. 2011. <span>“Description of the Input-Output Model for Pacific Coast Fisheries; NOAA Technical Memorandum NMFS-NWFSC ; 111.”</span> <a href="https://repository.library.noaa.gov/view/noaa/8718">https://repository.library.noaa.gov/view/noaa/8718</a>.
+Leonard, Jerry Lamar, and Philip Scott Watson. 2011. <em>Description of the Input-Output Model for Pacific Coast Fisheries; NOAA Technical Memorandum NMFS-NWFSC ; 111</em>. <a href="https://repository.library.noaa.gov/view/noaa/8718">https://repository.library.noaa.gov/view/noaa/8718</a>.
 </div>
 </div>
 
@@ -610,13 +616,14 @@ Leonard, Jerry Lamar, and Philip Scott Watson. 2011. <span>“Description of the
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

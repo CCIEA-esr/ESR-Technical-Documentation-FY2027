@@ -2,17 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>20&nbsp; Southern California Current Forage – CCIEA ESR Technical Documentation</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -24,7 +30,6 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -59,10 +64,10 @@ div.csl-indent {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d0b19794c1a4aabc601561f55f1a202f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6d760a16b2f050b9af31d1b509a0109a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -102,7 +107,8 @@ div.csl-indent {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="https://www.integratedecosystemassessment.noaa.gov/regions/california-current" class="navbar-brand navbar-brand-logo">
-    <img src="./figures/logo-5.png" alt="California Current Integrated Ecosystem Assessment Website" class="navbar-logo">
+    <img src="./figures/logo-5.png" alt="California Current Integrated Ecosystem Assessment Website" class="navbar-logo light-content">
+    <img src="./figures/logo-5.png" alt="California Current Integrated Ecosystem Assessment Website" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="https://www.integratedecosystemassessment.noaa.gov/regions/california-current">
     <span class="navbar-title">CCIEA ESR Technical Documentation</span>
@@ -524,7 +530,7 @@ div.csl-indent {
 
 <p><strong>Description</strong> Abundance indicators for forage in the Southern CCE come from fish and squid larvae collected in the spring (May-June) across all core stations of the CalCOFI survey. Larval data are indicators of the relative regional abundances of adult forage fish, such as sardines and anchovy, and other species, including certain groundfish, market squid, and mesopelagic fishes. The survey samples a variety of fish and invertebrate larvae (&lt;5 d old) from several taxonomic and functional groups, collected via oblique vertical tows of fine mesh Bongo nets to 212 m depth. In 2020, the spring larval survey was canceled due to COVID-19, and thus no data are available for that year, but survey operations resumed in 2021.</p>
 <p>Pelagic forage larvae data from the Southern CCE were provided by A. Thompson, NMFS/SWFSC, from spring CalCOFI surveys (<a href="https://calcofi.org/" class="uri">https://calcofi.org/</a>); data were not collected in 2020 due to survey cancellations associated with the COVID pandemic.</p>
-<p>Dr.&nbsp;A. Thompson, NMFS/SWFSC, created the heat plots coupled with chronological clustering analysis to describe forage dynamics in the California Current Ecosystem in our annual Ecosystem Status reports. Detailed methods can be found in <span class="citation" data-cites="thompson2019indicators">Thompson et al. (<a href="#ref-thompson2019indicators" role="doc-biblioref">2019</a>)</span>, but a brief synopsis follows: To determine when changes in assemblage structure took place, we ran chronological cluster analyses based on Bray-Curtis dissimilarity matrices calculated from ln(x+1)-transformed mean abundances of each taxon <span class="citation" data-cites="juggins2015rioja">(<a href="#ref-juggins2015rioja" role="doc-biblioref">Juggins 2015</a>)</span>. Chronological clustering identifies which years have similar assemblages with the constraint that years are sequential.</p>
+<p>Dr.&nbsp;A. Thompson, NMFS/SWFSC, created the heat plots coupled with chronological clustering analysis to describe forage dynamics in the California Current Ecosystem in our annual Ecosystem Status reports. Detailed methods can be found in <span class="citation" data-cites="thompson2019indicators"><span class="nocase">Thompson et al.</span> (<a href="#ref-thompson2019indicators" role="doc-biblioref">2019</a>)</span>, but a brief synopsis follows: To determine when changes in assemblage structure took place, we ran chronological cluster analyses based on Bray-Curtis dissimilarity matrices calculated from ln(x+1)-transformed mean abundances of each taxon <span class="citation" data-cites="juggins2015rioja">(<a href="#ref-juggins2015rioja" role="doc-biblioref">Juggins 2015</a>)</span>. Chronological clustering identifies which years have similar assemblages with the constraint that years are sequential.</p>
 <p>To help visualize taxa dynamics, we couple the chronological dendrograms with heat maps showing taxa Z-scores of species abundances in each year. We qualitatively discern the deepest breaks in assemblage structure based on the dendrograms and place vertical lines on the heatmaps to designate major changes to the forage assemblage.</p>
 <p>The color scheme is based on the value of the z-score. The z-score is the (abundance of a species in a given year - mean abundance over the time series)/standard deviation. A negative value means that it is below the long-term mean and positive above the mean. The z-score ranges from about -2.4 to +2.4. The color scale goes from red = low, white = average, blue = high. Z-scores were used instead of abundances because in each data set there is typically one or two species that are much more abundant than the others, swamping the color change effect for the other species. By running z-scores you can see how much a given species changes relative to their range in abundance.</p>
 <p><strong>Indicators</strong></p>
@@ -561,12 +567,12 @@ div.csl-indent {
 <p><strong>References</strong></p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-juggins2015rioja" class="csl-entry" role="listitem">
-Juggins, Steve. 2015. <span>“Rioja: Analysis of Quaternary Science Data.”</span>
+Juggins, Steve. 2015. <em>Rioja: Analysis of Quaternary Science Data</em>.
 </div>
 <div id="ref-thompson2019indicators" class="csl-entry" role="listitem">
-Thompson, Andrew R, Chris J Harvey, William J Sydeman, Caren Barceló, Steven J Bograd, Richard D Brodeur, Jerome Fiechter, et al. 2019. <span>“Indicators of Pelagic Forage Community Shifts in the California Current Large Marine Ecosystem, 1998–2016.”</span> <em>Ecological Indicators</em> 105: 215–28.
+<span class="nocase">Thompson, Andrew R, Chris J Harvey, William J Sydeman, et al.</span> 2019. <span>“Indicators of Pelagic Forage Community Shifts in the California Current Large Marine Ecosystem, 1998–2016.”</span> <em>Ecological Indicators</em> 105: 215–28.
 </div>
 </div>
 
@@ -622,13 +628,14 @@ Thompson, Andrew R, Chris J Harvey, William J Sydeman, Caren Barceló, Steven J 
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

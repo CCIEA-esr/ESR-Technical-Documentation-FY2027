@@ -2,17 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.34">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>28&nbsp; Groundfish Port Availability – CCIEA ESR Technical Documentation</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -24,7 +30,6 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -59,10 +64,10 @@ div.csl-indent {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-c8ad9e5dbd60b7b70b38521ab19b7da4.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-d0b19794c1a4aabc601561f55f1a202f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-6d760a16b2f050b9af31d1b509a0109a.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -102,7 +107,8 @@ div.csl-indent {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="https://www.integratedecosystemassessment.noaa.gov/regions/california-current" class="navbar-brand navbar-brand-logo">
-    <img src="./figures/logo-5.png" alt="California Current Integrated Ecosystem Assessment Website" class="navbar-logo">
+    <img src="./figures/logo-5.png" alt="California Current Integrated Ecosystem Assessment Website" class="navbar-logo light-content">
+    <img src="./figures/logo-5.png" alt="California Current Integrated Ecosystem Assessment Website" class="navbar-logo dark-content">
     </a>
     <a class="navbar-brand" href="https://www.integratedecosystemassessment.noaa.gov/regions/california-current">
     <span class="navbar-title">CCIEA ESR Technical Documentation</span>
@@ -522,8 +528,8 @@ div.csl-indent {
 </header>
 
 
-<p><strong>Description</strong> We estimated the relative availability of groundfish biomass to individual ports following the methods described in <span class="citation" data-cites="selden2020coupled">Selden et al. (<a href="#ref-selden2020coupled" role="doc-biblioref">2020</a>)</span>, with some exceptions. In brief, we used data from the Northwest Fisheries Science Center’s West Coast Groundfish Bottom Trawl Survey <span class="citation" data-cites="keller2017northwest">(<a href="#ref-keller2017northwest" role="doc-biblioref">Keller, Wallace, and Methot 2017</a>)</span> to estimate spatial distribution of species-specific biomass (Location Biomass), and the Center of Gravity (CoG) of the Location Biomass. We then calculate the Availability Index for each port by summing the Location Biomass within a radius from that port based on the 75th quantile of the distance traveled from port to harvest of species of interest, weighted by catch, as measured from trawl logbooks. We analyzed 12 species that make up a large component of landings for vessels using bottom trawl gear along the West Coast, or that have broader management interest (e.g., shortbelly rockfish).</p>
-<p>The present analysis differs from <span class="citation" data-cites="selden2020coupled">Selden et al. (<a href="#ref-selden2020coupled" role="doc-biblioref">2020</a>)</span> in three ways:</p>
+<p><strong>Description</strong> We estimated the relative availability of groundfish biomass to individual ports following the methods described in <span class="citation" data-cites="selden2020coupled"><span class="nocase">Selden et al.</span> (<a href="#ref-selden2020coupled" role="doc-biblioref">2020</a>)</span>, with some exceptions. In brief, we used data from the Northwest Fisheries Science Center’s West Coast Groundfish Bottom Trawl Survey <span class="citation" data-cites="keller2017northwest">(<a href="#ref-keller2017northwest" role="doc-biblioref">Keller et al. 2017</a>)</span> to estimate spatial distribution of species-specific biomass (Location Biomass), and the Center of Gravity (CoG) of the Location Biomass. We then calculate the Availability Index for each port by summing the Location Biomass within a radius from that port based on the 75th quantile of the distance traveled from port to harvest of species of interest, weighted by catch, as measured from trawl logbooks. We analyzed 12 species that make up a large component of landings for vessels using bottom trawl gear along the West Coast, or that have broader management interest (e.g., shortbelly rockfish).</p>
+<p>The present analysis differs from <span class="citation" data-cites="selden2020coupled"><span class="nocase">Selden et al.</span> (<a href="#ref-selden2020coupled" role="doc-biblioref">2020</a>)</span> in three ways:</p>
 <p>1- We estimated the spatial distribution of species using the R package sdmTMB <span class="citation" data-cites="anderson2022sdmtmb">(<a href="#ref-anderson2022sdmtmb" role="doc-biblioref">Anderson et al. 2022</a>)</span> instead of VAST <span class="citation" data-cites="thorson2019guidance">(<a href="#ref-thorson2019guidance" role="doc-biblioref">Thorson 2019</a>)</span>. The sdmTMB models included Pass and normalized depth as fixed parameters. Year was a time variable and models included both spatial and spatiotemporal (iid) autocorrelation, and a delta-poisson-link-gamma error distribution <span class="citation" data-cites="thorson2018three">(<a href="#ref-thorson2018three" role="doc-biblioref">Thorson 2018</a>)</span>.</p>
 <p>2- We used the Location Biomass directly instead of scaling it by spawning stock biomass from the assessment. Thus, the Availability Index is a relative biomass index and not actual available biomass. Biomass was then scaled to 0-1 for presentation by dividing by the highest value in any year.</p>
 <p>3- We used only the WCGBTS, and did not combine the Triennial survey (1980-2004) with the WCGBTS. This approach shortens the analysis period but allows us to expand the depth range to 55-1250 m.</p>
@@ -531,28 +537,28 @@ div.csl-indent {
 <p><strong>Indicator Category</strong> Ecological Integrity</p>
 <p><strong>Data Steward</strong> N. Tolimieri, NMFS/NWFSC (nick.tolimieri at noaa.gov)</p>
 <p><strong>Additional Information</strong> Data are collected and analyzed independently by N. Tolimieri, who submits unpublished figures and plots to the CCIEA editorial team.</p>
-<p><strong>Data sources</strong> Data for indicators come from the West Coast Groundfish Bottom Trawl Survey (WCGBTS) <span class="citation" data-cites="keller2017northwest">(<a href="#ref-keller2017northwest" role="doc-biblioref">Keller, Wallace, and Methot 2017</a>)</span> for 2003-2021. There were no data for 2020 because the WCGBTS was canceled due to the COVID-19 pandemic. The survey data includes estimates of age, length, and biomass for subsamples of each haul, and occasionally for the entire haul when catch is low.</p>
+<p><strong>Data sources</strong> Data for indicators come from the West Coast Groundfish Bottom Trawl Survey (WCGBTS) <span class="citation" data-cites="keller2017northwest">(<a href="#ref-keller2017northwest" role="doc-biblioref">Keller et al. 2017</a>)</span> for 2003-2021. There were no data for 2020 because the WCGBTS was canceled due to the COVID-19 pandemic. The survey data includes estimates of age, length, and biomass for subsamples of each haul, and occasionally for the entire haul when catch is low.</p>
 <p><strong>References</strong></p>
 <div class="sectionrefs">
 
 </div>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-anderson2022sdmtmb" class="csl-entry" role="listitem">
 Anderson, Sean C, Eric J Ward, Philina A English, and Lewis AK Barnett. 2022. <span>“<span class="nocase">sdmTMB: an R package for fast, flexible, and user-friendly generalized linear mixed effects models with spatial and spatiotemporal random fields</span>.”</span> <em>bioRxiv</em>, 2022–03.
 </div>
 <div id="ref-keller2017northwest" class="csl-entry" role="listitem">
-Keller, A. A., J. R. Wallace, and R. D. Methot. 2017. <span>“The Northwest Fisheries Science Center’s West Coast Groundfish Bottom Trawl Survey: History Design, and Description.”</span> Report. U.S. Department of Commerce. <a href="https://doi.org/10.7289/V5/TM-NWFSC-136">https://doi.org/10.7289/V5/TM-NWFSC-136</a>.
+Keller, A. A., J. R. Wallace, and R. D. Methot. 2017. <em>The Northwest Fisheries Science Center’s West Coast Groundfish Bottom Trawl Survey: History Design, and Description</em>. Report. U.S. Department of Commerce. <a href="https://doi.org/10.7289/V5/TM-NWFSC-136">https://doi.org/10.7289/V5/TM-NWFSC-136</a>.
 </div>
 <div id="ref-selden2020coupled" class="csl-entry" role="listitem">
-Selden, Rebecca L, James T Thorson, Jameal F Samhouri, Steven J Bograd, Stephanie Brodie, Gemma Carroll, Melissa A Haltuch, et al. 2020. <span>“Coupled Changes in Biomass and Distribution Drive Trends in Availability of Fish Stocks to US West Coast Ports.”</span> <em>ICES Journal of Marine Science</em> 77 (1): 188–99.
+<span class="nocase">Selden, Rebecca L, James T Thorson, Jameal F Samhouri, et al.</span> 2020. <span>“Coupled Changes in Biomass and Distribution Drive Trends in Availability of Fish Stocks to US West Coast Ports.”</span> <em>ICES Journal of Marine Science</em> 77 (1): 188–99.
 </div>
 <div id="ref-thorson2018three" class="csl-entry" role="listitem">
 Thorson, James T. 2018. <span>“Three Problems with the Conventional Delta-Model for Biomass Sampling Data, and a Computationally Efficient Alternative.”</span> <em>Canadian Journal of Fisheries and Aquatic Sciences</em> 75 (9): 1369–82.
 </div>
 <div id="ref-thorson2019guidance" class="csl-entry" role="listitem">
-———. 2019. <span>“<span class="nocase">Guidance for decisions using the Vector Autoregressive Spatio-Temporal (VAST) package in stock, ecosystem, habitat and climate assessments</span>.”</span> <em>Fisheries Research</em> 210: 143–61.
+Thorson, James T. 2019. <span>“<span class="nocase">Guidance for decisions using the Vector Autoregressive Spatio-Temporal (VAST) package in stock, ecosystem, habitat and climate assessments</span>.”</span> <em>Fisheries Research</em> 210: 143–61.
 </div>
 </div>
 
@@ -608,13 +614,14 @@ Thorson, James T. 2018. <span>“Three Problems with the Conventional Delta-Mode
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
